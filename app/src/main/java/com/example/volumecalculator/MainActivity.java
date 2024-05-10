@@ -59,6 +59,21 @@ public class MainActivity extends AppCompatActivity
     });
 
 
+ gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            if(gridViewAdapter.getItem(position).getImage_of_shape()==R.drawable.cylinder){
+
+                Intent i1=new Intent(getApplicationContext(),Cylinder.class);
+                startActivity(i1);
+
+            }
+
+
+        }
+    });
+
 
 
 
